@@ -1,4 +1,4 @@
-language: c++
+language: cpp
 
 before_install:
   - sudo apt-get -y install build-essential libopendbx1-dev libopendbx1-sqlite3 libluajit-5.1-dev
