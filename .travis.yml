@@ -6,7 +6,7 @@ before_install:
   - (cd libraries/luvit && git submodule add https://github.com/Theintercooler/libuv.git libraries/uv)
 
 script:
-  - (mkdir cmakebuild && cd cmakebuild && cmake -DHAVE_LOCAL_LIBUV=1 -DHAVE_LOCAL_LUVIT=1 .. && make -j5 && cd .. && rm -rf cmakebuild)
+  - (mkdir cmakebuild && cd cmakebuild && cmake -DHAVE_LOCAL_LIBUV=1 -DHAVE_LOCAL_LUVIT=1 .. && make -j5 && luapp_linux_x64 && cd .. && rm -rf cmakebuild)
 
 compiler:
   - clang
